@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barnabas Shiv - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0a0a0a">
+
+</head>
+<body>
+
+  <!-- PROFILE SECTION -->
+  <header class="profile-section">
+    <img src="CV.jpg" alt="Barnabas Shiv" class="profile-photo">
+    <h1>Barnabas Shivayilu</h1>
+    <p>Creative Developer • Faithful Innovator • Storyteller</p>
+  </header>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>SmartFix Barney</h3>
+      <p>A mobile app for smartphone diagnostics.</p>
+      <a href="https://barnaba5.github.io/SmartFix-_Barney/">View App</a>
+    </div>
+    <div class="project">
+      <h3>sanctuaryhub</h3>
+      <p>Where you find hope in every story and Bible inspiration.</p>
+      <a href="https://barnaba5.github.io/sanctuaryhub/">Read Comic</a>
+    </div>
+    <div class="project">
+      <h3>SmartFix Studio</h3>
+      <p>Mobile app development studio for posting and showcasing posters.</p>
+      <a href="https://barnaba5.github.io/SmartFix-Art/">View Studio</a>
+    </div>
+  </section>
+  <!-- ABOUT ME SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+<p>Hi, I'm Barnabas 👋, a passionate developer 💻 and a creative innovator 🎨✨.<br>
+I love creating innovative solutions 🛠️ and sharing my journey through visual stories 📸📚.<br>
+I believe in the power of technology ⚡ to make a difference 🌍, and I enjoy storytelling through my projects 🎬🧠.<br>
+My journey started with a simple idea 💡 and has grown into a passion for building meaningful applications 📱💖.<br>
+When I'm not coding 👨‍💻, you can find me sketching ideas ✏️📓 for my next comic 📖 or brainstorming new app concepts 🤯📲.<br>
+I am currently studying at the Cooperative University Of Kenya 🎓📘.</p>
+<section id="gallery">
+  <h2>📷 My Visual Stories</h2>
+
+  <!-- Carousel container -->
+  <div class="carousel-wrapper">
+    <div class="gallery-row" id="carousel">
+      <div class="gallery-item">
+        <img src="photo1.jpg" alt="Story 1">
+        <p>"The day I launched SmartFix Barney – nervous but hopeful."</p>
+        <a href="photo1.jpg" download class="download-btn">⬇️ Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="04.jpg" alt="Story 2">
+        <p>"Captured this moment right after finishing my comic idea for The Forbidden Shore."</p>
+        <a href="04.jpg" download class="download-btn">⬇️ Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="photo3.jpg" alt="Story 3">
+        <p>"This is from our youth group planning night... where the system idea began."</p>
+        <a href="photo3.jpg" download class="download-btn">⬇️ Download</a>
+      </div>
+      <div class="carousel-wrapper">
+    <div class="gallery-row" id="carousel">
+      <div class="gallery-item">
+        <img src="photo1.jpg" alt="Story 1">
+        <p>"The day I launched SmartFix Barney – nervous but hopeful."</p>
+        <a href="photo1.jpg" download class="download-btn">⬇️ Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="04.jpg" alt="Story 2">
+        <p>"Captured this moment right after finishing my comic idea for The Forbidden Shore."</p>
+        <a href="04.jpg" download class="download-btn">⬇️ Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="photo3.jpg" alt="Story 3">
+        <p>"This is from our youth group planning night... where the system idea began."</p>
+        <a href="photo3.jpg" download class="download-btn">⬇️ Download</a>
+      </div>
+      <div class="carousel-wrapper">
+    <div class="gallery-row" id="carousel">
+      <div class="gallery-item">
+        <img src="photo1.jpg" alt="Story 1">
+        <p>"The day I launched SmartFix Barney – nervous but hopeful."</p>
+        <a href="photo1.jpg" download class="download-btn">⬇️ Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="04.jpg" alt="Story 2">
+        <p>"Captured this moment right after finishing my comic idea for The Forbidden Shore."</p>
+        <a href="04.jpg" download class="download-btn">⬇️ Download</a>
+      </div>
+
+      <div class="gallery-item">
+        <img src="photo3.jpg" alt="Story 3">
+        <p>"This is from our youth group planning night... where the system idea began."</p>
+        <a href="photo3.jpg" download class="download-btn">⬇️ Download</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Add more photos + stories later -->
+</section>
+
+  <!-- CERTIFICATES SECTION -->
+  <section id="certificates">
+    <h2>My Certificates</h2>
+    <p>Certificates will be available soon. Check back later.</p>
+    <!-- Example image:
+    <img src="certificate1.jpg" alt="Certificate" class="certificate-img">
+    -->
+  </section>
+
+  <!-- ACADEMIC SECTION (PROTECTED) -->
+  <section id="academics">
+    <h2>My Academic Documents</h2>
+    <button class="btn" onclick="unlockAcademic()">🔐 View Academic Records</button>
+    <div id="academic-files" style="display:none; margin-top:10px;">
+      <a href="academic-docs.pdf" download>📥 Download Academic Records</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Barnabas Shiv. All Rights Reserved.</p>
+  </footer>
+
+  <!-- PASSWORD PROTECTION -->
+  <script>
+    function unlockAcademic() {
+      const password = prompt("Enter password to view academic documents:");
+      if (password === "mysecretpass") {
+        document.getElementById("academic-files").style.display = "block";
+      } else {
+        alert("Incorrect password. Please try again.");
+      }
+    }
+  </script>
+
+</body>
+</html>
